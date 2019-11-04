@@ -12,7 +12,7 @@ def do_warning():
 def test_1():
     do_warning()
 
-@pytest.mark.filterwarnings("ignore:bad:" + MyWarning.__module__ + "." + MyWarning.__name__)
+@pytest.mark.filterwarnings("always:bad:" + MyWarning.__module__ + "." + MyWarning.__name__)
 def test_2():
     do_warning()
 
